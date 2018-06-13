@@ -19,12 +19,12 @@ RSpec.describe Idea, type: :model do
   
   it "has a description" do
   	idea = Idea.create!(name: "My third idea name", description: "My third description")
-    expect(idea.description).to eq("My third description")
+   expect(idea.description).to eq("My third description")
   end
   
   it "will not save without a name" do
-  	idea = Idea.new
-  	expect(idea).to_not be_valid
+    idea = Idea.new
+    expect(idea).to_not be_valid
   end
   
 end
